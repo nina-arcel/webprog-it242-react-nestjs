@@ -6,9 +6,5 @@ export default defineConfig({
   build: {
     outDir: 'build',
     emptyOutDir: true
-  },
-  server: {
-    port: 3000,
-    open: true
   }
 })

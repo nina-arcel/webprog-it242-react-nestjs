@@ -1,22 +1,3 @@
-.guestbook-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.Cal-text {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-
-.subtitle {
-  color: #666;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
 #app {
   width: 100%;
   max-width: 400px;
@@ -24,7 +5,7 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   padding: 20px;
   border-radius: 8px;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
 }
 
 input[type="text"], textarea {
@@ -53,123 +34,40 @@ button {
   transition: all 0.3s ease;
 }
 
-button:hover:not(:disabled) {
+button:hover {
   background-color: #7cff9898;
 }
 
-button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.entries-section {
-  margin-top: 2rem;
+li {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+  border-left: 5px solid #f8e1ed;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 4px;
 }
 
-.entries-section hr {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.Cal-text {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+hr {
   border: none;
   height: 1px;
   background: linear-gradient(to right, transparent, #f8e1ed, transparent);
   margin: 2rem 0;
-}
-
-.entries-section h2 {
-  color: #333;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.entries-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
-.entry-card {
-  background-color: white;
-  border-left: 5px solid #f8e1ed;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.entry-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-
-.entry-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.entry-name {
-  font-size: 1.1rem;
-  color: #333;
-}
-
-.entry-date {
-  color: #999;
-  font-size: 0.85rem;
-}
-
-.entry-message {
-  color: #666;
-  line-height: 1.4;
-  margin: 0.5rem 0;
-  word-wrap: break-word;
-}
-
-.entry-actions {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.edit-btn, .delete-btn, .save-btn, .cancel-btn {
-  padding: 5px 10px;
-  font-size: 0.9rem;
-}
-
-.edit-btn {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.delete-btn {
-  background-color: #f44336;
-  color: white;
-}
-
-.edit-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.edit-input, .edit-textarea {
-  width: 100%;
-  padding: 6px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.edit-actions {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.save-btn {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.cancel-btn {
-  background-color: #ff9800;
-  color: white;
 }

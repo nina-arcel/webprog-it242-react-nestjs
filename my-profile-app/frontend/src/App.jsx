@@ -7,7 +7,6 @@ function App() {
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
 
-  // Load entries from API on component mount
   useEffect(() => {
     loadEntries();
   }, []);
@@ -29,7 +28,7 @@ function App() {
       await createGuestbookEntry({ name, message });
       setName('');
       setMessage('');
-      loadEntries(); // Refresh the list
+      loadEntries();
     } catch (error) {
       console.error('Error creating entry:', error);
     }
@@ -81,7 +80,7 @@ function App() {
                     <br />
                     <small>{entry.message}</small>
                     <br />
-                    <small style={{ color: '#999', fontSize: '0.8em' }}>
+                    <small style={{ color: '#999' }}>
                       {new Date(entry.created_at).toLocaleString()}
                     </small>
                   </li>

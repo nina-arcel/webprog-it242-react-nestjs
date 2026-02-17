@@ -1,0 +1,59 @@
+#app {
+  width: 100%;
+  max-width: 400px; 
+  background-color: #f8e1ed;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    #app label {
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background-color: rgba(251, 255, 0, 0.349);
+      color: black;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover { background-color: #7cff9898; }
+
+    ul { list-style-type: none; padding: 0; }
+    
+    li {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: white;
+      border-left: 5px solid rgba(0,0,0,0.1);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .yes-badge {
+      color: green;
+      font-weight: bold;
+      font-size: 0.8em;
+    }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontal centering */
+  justify-content: center; /* Vertical centering */
+  margin: 0;
+}

@@ -58,16 +58,11 @@ li {
   padding: 2rem;
 }
 
-.container p {
-  text-align: center;
-  color: #666;
-  margin-bottom: 2rem;
-}
-
 .subtitle {
   color: #666;
   margin-bottom: 2rem;
-  text-align: center;  
+  text-align: center;
+    
 }
 
 .Cal-text {
